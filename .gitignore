@@ -1,4 +1,7 @@
-env
-.DS_Store
-.pyc
-__pycache__
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*$py.class
+
+# Django logs
+*.log
