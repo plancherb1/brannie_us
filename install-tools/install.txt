@@ -1,9 +1,3 @@
-#!/bin/bash
-
-# Assumes that the website lives in ~ e.g.,
-# cd ~
-# git clone https://github.com/plancherb1/brannie_us.git
-
 # basic installs
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -22,6 +16,10 @@ yes | sudo pip install MySQL-python
 # Install django 1.9.7 (known to be stable)
 yes | sudo pip install -U django==1.9.7
 # Alternatively drop the -u and the ==1.9.7 and try the latest
+
+# Download the website to ~
+cd ~
+git clone https://github.com/plancherb1/brannie_us.git
 
 # make the site available to apache by overwriting the apache sites-
 # available file to include our site
