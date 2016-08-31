@@ -8,7 +8,7 @@ sudo apt-get install python-pip
 sudo apt-get install apache2
 sudo apt-get install apache2-dev
 sudo apt-get install python2.7-dev
-sudo pip install mod-wsgi
+sudo apt-get install libapache2-mod-wsgi
 sudo pip install MySQL-python
 
 # Uninstall old django by typing in
@@ -25,4 +25,6 @@ git clone https://github.com/plancherb1/brannie_us.git
 
 # make it available to apache by overwriting the apache sites-
 # available file to include our site
-cp ~/brannie_us/install-tools/000-default.conf /etc/apache2/sites-available/000-default.conf
+sudo cp ~/brannie_us/install-tools/000-default.conf /etc/apache2/sites-available/000-default.conf
+sudo service apache2 stop
+sudo service apache2 start
