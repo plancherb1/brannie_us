@@ -13,11 +13,23 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls import include, url
 from django.contrib import admin
-from version1 import views #pick which app/version to use here
+from . import settings
+#pick which app/version to use here
+from version1 import views
 
+# main url patterns
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^home/', views.home, name='home'),
+    url(r'getImage/(?P<id>[0-9]+)/$', views.getImage, name='getImage'),
     url(r'^$', views.index, name='index'),
 ]
+
+# handle the 404 error
+handler404 = views.error404
+
+# handle static files
+urlpatterns += staticfiles_urlpatterns()
