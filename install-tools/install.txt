@@ -19,5 +19,4 @@ git clone https://github.com/plancherb1/brannie_us.git
 # make the site available to apache by overwriting the apache sites-
 # available file to include our site
 sudo cp ~/brannie_us/install-tools/000-default.conf /etc/apache2/sites-available/000-default.conf
-sudo service apache2 stop
-sudo service apache2 start
+sudo service apache2 restart
