@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
 	</head>
 	<body>
 
@@ -18,14 +19,23 @@
 			<header id="header" class="alt">
 				<div class="inner">
 					<h1>Brian and Annie</h1>
-					<p>#BrannieGetHitched</p>
+					<h2>#CapeBrannie</h2>
 				</div>
 			</header>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Banner -->
+				<!-- Main used as intro text-->
+					<section id="main" class="main">
+						<header>
+							<h3>We are incredibly excited to get married on INSERT_DATE starting at INSERT_TIME at INSERT_LOCATION</h3>
+						</header>
+						<p>You will find more information on the schedule of events, venue, accomodation and travel information, and for our registry and contact information below. We will continue to update this page with the most up to date information as it is finalized. If at any point you know for sure that you can or cannot make it please let us know. That said, we hope you will be able to celebrate with us!</p>
+						<p> -Brian and Annie </p>
+					</section>
+
+				<!-- Banner to Login
 					<section id="intro" class="main">
 						<span class="icon fa-diamond major"></span>
 						<h2>RSVP to our Wedding</h2>
@@ -35,37 +45,43 @@
 							<li><a href="#" class="button big">Log In</a></li>
 						</ul>
 					</section>
+				-->
 
 				<!-- Items -->
 					<section class="main items">
 						<article class="item">
 							<header>
-								<a href="#"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
+								<a href="wedding/events"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
 								<h3>View the schedule of events</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>We will be hosting a Shabbat Dinner on Friday Evening for anyone who is in town. There will be daytime activites on Saturday and suggested dinner locations for Saturday night. The wedding itself will commence at TBD_TIME on Sunday with an after party starting at TBD_TIME. Monday morning there will be a brunch offered from TBD_TIME to TBD_TIME. More detailed information can be found on the full itinerary link below.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">Itinerary</a></li>
+								<li><a href="wedding/events" class="button">Full Itinerary</a></li>
 							</ul>
 						</article>
 						<article class="item">
 							<header>
-								<a href="#"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+								<a href="wedding/venue"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
 								<h3>Explore our venue</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>Our venue will be the picturesque INSERT_VENUE. One or two BS sentences about the venue. </p>
 							<ul class="actions">
-								<li><a href="#" class="button">Venue Website</a></li>
+								<li><a href="wedding/venue" class="button">Venue Website</a></li>
 							</ul>
 						</article>
 						<article class="item">
 							<header>
-								<a href="#"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
+								<a href="wedding/travel"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
 								<h3>Accomodation and travel information</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>We have reserved blocks of rooms at INSERT_HOTEL_NAMES. These rooms will be held until INSERT_DATE. Traveling to INSERT_LOCATION is easiest done by XYZW (basic high level instructions go here) plan for PQRS amount of time etc. Please budget additional travel time on both START_DATE and END_DATE for traffic which is often in especially high volume on INSERT_DATE weekend. We STRONGLY encourage you to finalize your travel plans sooner rather than later as prices at INSERT_LOCATION will rise quickly and nearby locations will sell out on INSERT_DATE weekend.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More Details</a></li>
+								<li><a href="wedding/travel" class="button">Detailed Travel Information</a></li>
+								<li><a href="#" class="button">HotelA Website</a></li>
+								<li><a href="#" class="button">HotelB Website</a></li>
+								<li><a href="#" class="button">HotelC Website</a></li>
+								<li><a href="#" class="button">HotelD Website</a></li>
+								<li><a href="#" class="button">HotelE Website</a></li>
 							</ul>
 						</article>
 						<article class="item">
@@ -73,10 +89,13 @@
 								<a href="#"><img src="{% static 'images/pic04.jpg' %}" alt="" /></a>
 								<h3>Our registry</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>We are already blessed by your presence but if you insist on giving us a gift as well you will find links to our registry and GoFundMe for our honeymoon below. We also encourage you to donate to our favorite charities in our honor whose links you will also find below. </p>
 							<ul class="actions">
 								<li><a href="#" class="button">Registry</a></li>
 								<li><a href="#" class="button">GoFundMe</a></li>
+								<li><a href="#" class="button">CharityA</a></li>
+								<li><a href="#" class="button">CharityB</a></li>
+								<li><a href="#" class="button">CharityC</a></li>
 							</ul>
 						</article>
 					</section>
@@ -88,28 +107,29 @@
 						Feel free to contact us with any questions, comments<br />
 						or concerns. See you soon!</p>
 						<ul class="actions">
-							<li><a href="#" class="button big">Contact Info</a></li>
+							<li><a href="#" class="button big contactBtn">Contact Info</a></li>
 						</ul>
-					</section>
+						<!-- Contact Modal -->
+						<div class="contactModal">
+						  <div class="contactModal-content">
+						    <div class="contactModal-text">
+						    	<h3>Email: <a href="mailto:cape.brannie@gmail.com">cape.brannie@gmail.com</a></h3>
+						    	<h3>Phone: <a href="tel:1-609-273-2099">1-609-273-2099</a></h3>
+						    </div>
+						    <a href="#" class="button big contactModal-close">Close</a>
+						  </div>
 
-				<!-- Main -->
-				<!--
-					<section id="main" class="main">
-						<header>
-							<h2>Lorem ipsum dolor</h2>
-						</header>
-						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
 					</section>
-				-->
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="https://twitter.com/search?f=tweets&q=%23BrannieGetHitched&src=typd" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/search/top/?q=%23BrannieGetHitched" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/explore/tags/BrannieGetHitched/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/search?f=tweets&q=%23CapeBrannie&src=typd" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/search/top/?q=%23CapeBrannie" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/explore/tags/CapeBrannie/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+						<p class="copyright">&copy; <a href="https://templated.co">TEMPLATED</a></p>
 					</footer>
 
 			</div>
@@ -119,6 +139,7 @@
 		<script src="{% static 'js/skel.min.js' %}"></script>
 		<script src="{% static 'js/util.js' %}"></script>
 		<script src="{% static 'js/main.js' %}"></script>
+		<script src="{% static 'js/custom.js' %}"></script>
 
 	</body>
 </html>

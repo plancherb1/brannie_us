@@ -4,16 +4,28 @@ from django.templatetags.static import static
 
 # 404 error
 def error404(request):
-	return HttpResponse("Error 404")	
+	return HttpResponse("Sorry you have reached an invalid url!")	
 
 # home page
 def index(request):
-    return render(request, 'index/indexWithAjax.html')
+	return HttpResponseRedirect("/wedding")
+#    return render(request, 'index/indexWithAjax.html')
 
-# wedding website home
-def home(request):
+''' 
+wedding website views
+'''
+# home page
+def wedding(request):
 	return render(request, 'epilogue/index.html')
-
+# events page
+def weddingEvents(request):
+	return render(request, 'epilogue/404.html')
+# venue page
+def weddingVenue(request):
+	return render(request, 'epilogue/404.html')
+# travel page
+def weddingTravel(request):
+	return render(request, 'epilogue/404.html')
 # return image url
 def getImage(request, id):
 	url = static("images/slideshow/" + str(id) + ".jpg")
