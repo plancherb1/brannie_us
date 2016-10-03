@@ -17,14 +17,11 @@ wedding website views
 # home page
 def wedding(request):
 	return render(request, 'epilogue/index.html')
-# events page
-def weddingEvents(request):
-	return render(request, 'epilogue/404.html')
-# venue page
-def weddingVenue(request):
-	return render(request, 'epilogue/404.html')
-# travel page
-def weddingTravel(request):
+# hotels page
+def weddingHotels(request):
+	return render(request, 'epilogue/hotels.html')
+# directions page
+def weddingDirections(request):
 	return render(request, 'epilogue/404.html')
 # return image url
 def getImage(request, id):

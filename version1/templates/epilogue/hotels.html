@@ -1,0 +1,352 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Brian and Annie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Brian and Annie</h1>
+					<h2>#LegallyBrannie</h2>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main used as intro text-->
+					<section id="main" class="main">
+						<header>
+							<h2>Hotel Information</h2>
+						</header>
+						<p>We STRONGLY encourage you to finalize your travel plans sooner rather than later as prices in the Chatham area will rise quickly and nearby accomodations tend to sell out every Memorial Day Weekend. We have included a (relatevily) comprehensive list of area accomidations from motels to bed and breakfasts to larger inns.</p>
+						<p> If you are also interested in sharing an Airbnb, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeswtDUboI5vVydjL3xAyyKj8l8sXeCwZscHqMBNnXqyq-1Ag/viewform?c=0&w=1">let us know</a> and we will try to help coordinate.</p>
+						
+						<table id="hotelTable" class="tablesorter" style="font-size:2.5vmin"> 
+							<tr>
+								<td></td>
+								<td>Name</td>
+								<td>Room Block</td>
+								<td>Price per Room</td>
+								<td>Night Minimum</td>
+								<td>Distance from Venue</td>
+								<td>Phone Number</td>
+								<td>Notes</td>
+							</tr>
+							<tr>
+								<td>A</td>
+								<td><a target="_blank" href='http://www.chathambarsinn.com/'>Chatham Bars Inn</a></td>
+								<td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+								<td>$450</td>
+								<td>TBD</td>
+								<td>0</td>
+								<td><a href='tel:1-508-945-0096'>1-508-945-0096</a></td>
+								<td>XX rooms blocked until DATE</td>
+							</tr>
+							<tr>
+								<td>B</td>
+								<td><a target="_blank" href='http://www.chathamhighlander.com/'>Chatham Highlander</a></td>
+								<td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+								<td>$169</td>
+								<td>3 Nights</td>
+								<td>1.2 Miles</td>
+								<td><a href='tel:1-508-945-9038'>1-508-945-9038</a></td>
+								<td>10 rooms blocked until March 31st</td>
+							</tr>
+							<tr>
+								<td>C</td>
+								<td><a target="_blank" ref='http://www.chathammotel.com/'>Chatham Motel</a></td>
+								<td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
+								<td>$150-$170</td>
+								<td>2 Nights</td>
+								<td>2.2 Miles</td>
+								<td><a href='tel:1-800-770-5545'>1-800-770-5545</a></td>
+								<td>8 rooms blocked until March 1st</td>
+							</tr>
+							<tr>
+								<td>D</td>
+								<td><a target="_blank" href='http://surfsideinnchatham.com/'>Surfside Motor Inn</a></td>
+								<td></td>
+								<td>$175-$225</td>
+								<td>TBD</td>
+								<td>0.7 Miles</td>
+								<td><a href='tel:1-508-945-9757'>1-508-945-9757</a></td>
+								<td>18 rooms available but will not book until March 1st</td>
+							</tr>
+							<tr>
+								<td>E</td>
+								<td><a target="_blank" href='http://www.waysideinn.com/'>Chatham Wayside Inn</a></td>
+								<td></td>
+								<td>$185-$355</td>
+								<td>2 Nights</td>
+								<td>0.5 Miles</td>
+								<td><a href='tel:1-508-945-5550'>1-508-945-5550</a></td>
+								<td>One of the larger inns in the area - over 20 rooms avaialbe at $250 or less as of 10/1</td>
+							</tr>
+							<tr>
+								<td>F</td>
+								<td><a target="_blank" href='http://www.thehawthorne.com/'>Hawthorne Motel</a></td>
+								<td></td>
+								<td>$225-$260</td>
+								<td>2 Nights</td>
+								<td>0.2 Miles</td>
+								<td><a href='tel:1-508-945-0372'>1-508-945-0372</a></td>
+								<td>Closest hotel to our venue but already 75% full as of 10/1</td>
+							</tr>
+							<tr>
+								<td>G</td>
+								<td><a target="_blank" href='http://www.oldeharbourinn.com/'>Old Harbour Inn</a></td>
+								<td></td>
+								<td>$259-$359</td>
+								<td>3 Nights</td>
+								<td>0.7 Miles</td>
+								<td><a href='tel:1-508-945-4434'>1-508-945-4434</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>H</td>
+								<td><a target="_blank" href='http://www.thecarriagehouseinn.com/'>Carriage House Inn</a></td>
+								<td></td>
+								<td>$275-$350</td>
+								<td>TBD</td>
+								<td>0.5 Miles</td>
+								<td><a href='tel:1-508-945-4688'>1-508-945-4688</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>I</td>
+								<td><a target="_blank" href='https://chathamgablesinn.com/'>Chatham Gables Inn</a></td>
+								<td></td>
+								<td>$300-$350</td>
+								<td>TBD</td>
+								<td>0.7 Miles</td>
+								<td><a href='tel:1-508-945-5859'>1-508-945-5859</a></td>
+								<td></td>
+							</tr>
+						</table>
+						<div id="map"></div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="main special">
+						<h2>We Hope You Can Make It</h2>
+						<p>We are looking forward to celebrating with you.<br />
+						Feel free to contact us with any questions, comments<br />
+						or concerns. See you soon!</p>
+						<ul class="actions">
+							<li><a href="#" class="button big contactBtn">Contact Info</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="/" class="button big">Home Page</a></li>
+						</ul>
+						<!-- Contact Modal -->
+						<div class="contactModal">
+						  <div class="contactModal-content">
+						    <div class="contactModal-text">
+						    	<h3>Email: <a href="mailto:legally.brannie@gmail.com">legally.brannie@gmail.com</a></h3>
+						    	<h3>Phone: <a href="tel:1-609-273-2099">1-609-273-2099</a></h3>
+						    </div>
+						    <a href="#" class="button big contactModal-close">Close</a>
+						  </div>
+
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/search?f=tweets&q=%23LegallyBrannie&src=typd" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/search/top/?q=%23LegallyBrannie" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/explore/tags/LegallyBrannie/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+						<p class="copyright">&copy; <a href="https://templated.co">TEMPLATED</a></p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery.tablesorter.min.js' %}"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/util.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+		<script src="{% static 'js/custom.js' %}"></script>
+		<script type="text/javascript">
+			$(document).ready(function() 
+			    { 
+			        $("#hotelTable").tablesorter(); 
+			    } 
+			);
+
+
+			function initMap() {
+				var CBILatLng = {lat: 41.684960, lng: -69.952397}; 
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 14,
+				  center: CBILatLng
+				});
+
+				/* CBI */
+				var CBI = new google.maps.Marker({
+				  position: CBILatLng,
+				  map: map,
+				  title: 'Chatham Bars Inn',
+				  label: 'A'
+				});
+				var CBIText = "<a target='_blank' href='http://www.chathambarsinn.com/'>Chatham Bars Inn</a></br><a href='tel:1-508-945-0096'>1-508-945-0096</a>";
+				var CBIinfowindow = new google.maps.InfoWindow({
+			    	content: CBIText
+				});
+				CBI.addListener('click', function() {
+			    	CBIinfowindow.open(map, CBI);
+			  	});
+
+				/* Chatham Highlander */
+			  	var highlanderLatLng = {lat: 41.687316, lng: -69.970242}; 
+				var highlander = new google.maps.Marker({
+				  position: highlanderLatLng,
+				  map: map,
+				  title: 'Chatham Highlander',
+				  label: 'B'
+				});
+				var highlanderText = '<a target="_blank" href="http://www.chathamhighlander.com/">Chatham Highlander</a></br><a href="tel:1-508-945-9038">1-508-945-9038</a>';
+				var highlanderinfowindow = new google.maps.InfoWindow({
+			    	content: highlanderText
+				});
+				highlander.addListener('click', function() {
+			    	highlanderinfowindow.open(map, highlander);
+			  	});
+
+			  	/* Chatham Motel */
+			  	var chathamMotelLatLng = {lat: 41.682845, lng: -69.988647}; 
+				var chathamMotel = new google.maps.Marker({
+				  position: chathamMotelLatLng,
+				  map: map,
+				  title: 'Chatham Motel',
+				  label: 'C'
+				});
+				var chathamMotelText = "<a target='_blank' href='http://www.chathammotel.com/'>Chatham Motel</a></br><a href='tel:1-800-770-5545'>1-800-770-5545</a>";
+				var chathamMotelinfowindow = new google.maps.InfoWindow({
+			    	content: chathamMotelText
+				});
+				chathamMotel.addListener('click', function() {
+			    	chathamMotelinfowindow.open(map, chathamMotel);
+			  	});
+
+			  	/* Surfside Motor Inn */
+			  	var surfsideLatLng = {lat: 41.676218, lng: -69.948219}; 
+				var surfside = new google.maps.Marker({
+				  position: surfsideLatLng,
+				  map: map,
+				  title: 'Surfside Motor Inn',
+				  label: 'D'
+				});
+				var surfsideText = "<a target='_blank' href='http://surfsideinnchatham.com/'>Surfside Motor Inn</a></br><a href='tel:1-508-945-9757'>";
+				var surfsideinfowindow = new google.maps.InfoWindow({
+			    	content: surfsideText
+				});
+				surfside.addListener('click', function() {
+			    	surfsideinfowindow.open(map, surfside);
+			  	});
+
+			  	/* Chatham Wayside Inn */
+			  	var waysideLatLng = {lat: 41.680331, lng: -69.957309}; 
+				var wayside = new google.maps.Marker({
+				  position: waysideLatLng,
+				  map: map,
+				  title: 'Chatham Wayside Inn',
+				  label: 'E'
+				});
+				var waysideText = "<a target='_blank' href='http://www.waysideinn.com/'>Chatham Wayside Inn</a></br><a href='tel:1-508-945-5550'>1-508-945-5550</a>";
+				var waysideinfowindow = new google.maps.InfoWindow({
+			    	content: waysideText
+				});
+				wayside.addListener('click', function() {
+			    	waysideinfowindow.open(map, wayside);
+			  	});
+
+			  	/* Hawthorne Motel */
+			  	var hawthorneLatLng = {lat: 41.682462, lng: -69.95023}; 
+				var hawthorne = new google.maps.Marker({
+				  position: hawthorneLatLng,
+				  map: map,
+				  title: 'Hawthorne Motel',
+				  label: 'F'
+				});
+				var hawthorneText = "<a target='_blank' href='http://www.thehawthorne.com/'>Hawthorne Motel</a></br><a href='tel:1-508-945-0372'>1-508-945-0372</a>";
+				var hawthorneinfowindow = new google.maps.InfoWindow({
+			    	content: hawthorneText
+				});
+				hawthorne.addListener('click', function() {
+			    	hawthorneinfowindow.open(map, hawthorne);
+			  	});
+
+			  	/* Old Harbour Inn */
+			  	var oldharbourLatLng = {lat: 41.683229, lng: -69.960825}; 
+				var oldharbour = new google.maps.Marker({
+				  position: oldharbourLatLng,
+				  map: map,
+				  title: 'Old Harbour Inn',
+				  label: 'G'
+				});
+				var oldharbourText = "<a target='_blank' href='http://www.oldeharbourinn.com/'>Old Harbour Inn</a></br><a href='tel:1-508-945-4434'>1-508-945-4434</a>";
+				var oldharbourinfowindow = new google.maps.InfoWindow({
+			    	content: oldharbourText
+				});
+				oldharbour.addListener('click', function() {
+			    	oldharbourinfowindow.open(map, oldharbour);
+			  	});
+
+			  	/* Carriage House Inn */
+			  	var carriageLatLng = {lat: 41.692813, lng: -69.95539}; 
+				var carriage = new google.maps.Marker({
+				  position: carriageLatLng,
+				  map: map,
+				  title: 'Carriage House Inn',
+				  label: 'H'
+				});
+				var carriageText = "<a target='_blank' href='http://www.thecarriagehouseinn.com/'>Carriage House Inn</a></br><a href='tel:1-508-945-4688'>1-508-945-4688</a>";
+				var carriageinfowindow = new google.maps.InfoWindow({
+			    	content: carriageText
+				});
+				carriage.addListener('click', function() {
+			    	carriageinfowindow.open(map, carriage);
+			  	});
+
+			  	/* Chatham Gables Inn */
+			  	var gablesLatLng = {lat: 41.691591, lng: -69.955804}; 
+				var gables = new google.maps.Marker({
+				  position: gablesLatLng,
+				  map: map,
+				  title: 'Chatham Gables Inn',
+				  label: 'I'
+				});
+				var gablesText = "<a target='_blank' href='https://chathamgablesinn.com/'>Chatham Gables Inn</a></br><a href='tel:1-508-945-5859'>1-508-945-5859</a>";
+				var gablesinfowindow = new google.maps.InfoWindow({
+			    	content: gablesText
+				});
+				gables.addListener('click', function() {
+			    	gablesinfowindow.open(map, gables);
+			  	});
+
+			  	google.maps.event.addDomListener(window, 'resize', function() {
+				    setTimeout(function(){map.panTo(CBILatLng);},1000);
+				})
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3a3-iScvaizaXbajC82osjU7VbziooAg&callback=initMap"></script>
+	</body>
+</html>

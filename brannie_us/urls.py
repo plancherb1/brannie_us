@@ -24,10 +24,9 @@ from version1 import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^wedding$', views.wedding, name='wedding'),
-    url(r'^wedding/venue', views.weddingVenue, name='weddingVenue'),
-    url(r'^wedding/events', views.weddingEvents, name='weddingEvents'),
-    url(r'^wedding/travel', views.weddingTravel, name='weddingTravel'),
-    url(r'getImage/(?P<id>[0-9]+)/$', views.getImage, name='getImage'),
+    url(r'^wedding/directions', views.weddingDirections, name='weddingDirections'),
+    url(r'^wedding/hotels', views.weddingHotels, name='weddingHotels'),
+    #url(r'getImage/(?P<id>[0-9]+)/$', views.getImage, name='getImage'),
     url(r'^$', views.index, name='index'),
 ]
 

@@ -42,3 +42,9 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Google Maps Inser */
+#map {
+    height: 100%;
+    min-height: 500px;
+}
