@@ -32,9 +32,9 @@
 							<h2>Hotel Information</h2>
 						</header>
 						<p>We STRONGLY encourage you to finalize your travel plans sooner rather than later as prices in the Chatham area will rise quickly and nearby accomodations tend to sell out every Memorial Day Weekend. We have included a (relatevily) comprehensive list of area accomidations from motels to bed and breakfasts to larger inns.</p>
-						<p> If you are also interested in sharing an Airbnb, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeswtDUboI5vVydjL3xAyyKj8l8sXeCwZscHqMBNnXqyq-1Ag/viewform?c=0&w=1">let us know</a> and we will try to help coordinate.</p>
+						<p> If you are also interested in sharing an <a target='_blank' href='https://www.airbnb.com/s/Chatham--MA--United-States?checkin=05%2F26%2F2017&checkout=05%2F29%2F2017&ss_id=uiq9iom9&source=bb&s_tag=MnJcXyB6&allow_override%5B%5D=&page=1'>Airbnb</a>/<a target='_blank' href='https://www.vrbo.com/vacation-rentals/usa/massachusetts/cape-cod/chatham?from-date=2017-05-25&to-date=2017-05-28'>VRBO</a>/<a target='_blank' href='https://www.homeaway.com/search/massachusetts/chatham/region:138/arrival:2017-05-26/departure:2017-05-29?view=l'>HomeAway</a>, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeswtDUboI5vVydjL3xAyyKj8l8sXeCwZscHqMBNnXqyq-1Ag/viewform?c=0&w=1">let us know</a> and we will try to help coordinate.</p>
 						
-						<table id="hotelTable" class="tablesorter" style="font-size:2.5vmin"> 
+						<table id="hotelTable" class="tablesorter"> 
 							<tr>
 								<td></td>
 								<td>Name</td>
@@ -49,11 +49,11 @@
 								<td>A</td>
 								<td><a target="_blank" href='http://www.chathambarsinn.com/'>Chatham Bars Inn</a></td>
 								<td><i class="fa fa-check-circle" aria-hidden="true"></i></td>
-								<td>$450</td>
-								<td>TBD</td>
+								<td>$350-$450</td>
+								<td>2 Nights</td>
 								<td>0</td>
 								<td><a href='tel:1-508-945-0096'>1-508-945-0096</a></td>
-								<td>XX rooms blocked until DATE</td>
+								<td>Our venue has 30 rooms blocked until March 1st</td>
 							</tr>
 							<tr>
 								<td>B</td>
@@ -80,7 +80,7 @@
 								<td><a target="_blank" href='http://surfsideinnchatham.com/'>Surfside Motor Inn</a></td>
 								<td></td>
 								<td>$175-$225</td>
-								<td>TBD</td>
+								<td>2 Nights</td>
 								<td>0.7 Miles</td>
 								<td><a href='tel:1-508-945-9757'>1-508-945-9757</a></td>
 								<td>18 rooms available but will not book until March 1st</td>
@@ -120,7 +120,7 @@
 								<td><a target="_blank" href='http://www.thecarriagehouseinn.com/'>Carriage House Inn</a></td>
 								<td></td>
 								<td>$275-$350</td>
-								<td>TBD</td>
+								<td>2 Nights</td>
 								<td>0.5 Miles</td>
 								<td><a href='tel:1-508-945-4688'>1-508-945-4688</a></td>
 								<td></td>
@@ -130,7 +130,7 @@
 								<td><a target="_blank" href='https://chathamgablesinn.com/'>Chatham Gables Inn</a></td>
 								<td></td>
 								<td>$300-$350</td>
-								<td>TBD</td>
+								<td>3 Nights</td>
 								<td>0.7 Miles</td>
 								<td><a href='tel:1-508-945-5859'>1-508-945-5859</a></td>
 								<td></td>
@@ -178,19 +178,11 @@
 
 		<!-- Scripts -->
 		<script src="{% static 'js/jquery.min.js' %}"></script>
-		<script src="{% static 'js/jquery.tablesorter.min.js' %}"></script>
 		<script src="{% static 'js/skel.min.js' %}"></script>
 		<script src="{% static 'js/util.js' %}"></script>
 		<script src="{% static 'js/main.js' %}"></script>
 		<script src="{% static 'js/custom.js' %}"></script>
 		<script type="text/javascript">
-			$(document).ready(function() 
-			    { 
-			        $("#hotelTable").tablesorter(); 
-			    } 
-			);
-
-
 			function initMap() {
 				var CBILatLng = {lat: 41.684960, lng: -69.952397}; 
 
