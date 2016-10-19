@@ -10,3 +10,8 @@ $(".contactModal-close").click(function() {
     $(".contactModal").css("display","none");
     return false;
 });
+
+// diabled links
+$('.disabled').click(function(){
+	return false;
+});
