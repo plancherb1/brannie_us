@@ -1,0 +1,582 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Brian and Annie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<div class="inner">
+				<h1>Brian and Annie</h1>
+				<h2>#LegallyBrannie</h2>
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main used as intro text-->
+			<section id="main" class="main">
+				<header>
+					<h2>Local Restaurants</h2>
+				</header>
+				<div id="map"></div>
+				<table id="hotelTable" class="tablesorter">
+					<tr>
+						<th></th>
+						<th>Name</th>
+						<th>Town</th>
+						<th>Cuisine</th>
+						<th>Vibe</tH>
+						<th>Price</th>
+						<th>Telephone</th>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td><a target="_blank" href="http://www.theimpudentoyster.com/">Impudent Oyster</a></td>
+						<td>Chatham</td>
+						<td>Seafood with a Mediterranean/Italian vibe</td>
+						<td>Upscale, romantic, hip</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-945-3545">1-508-945-3545</a></td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td><a target="_blank" href="thesquire.com">Chatham Squire</a></td>
+						<td>Chatham</td>
+						<td>Classic pub-fare</td>
+						<td>Super casual, pub, hip, hot spot of Chatham (call it "The Squire", always a crowd</td>
+						<td>$</td>
+						<td><a href="tel:1-508-945-0945">1-508-945-0945</a></td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td><a target="_blank" href="http://www.bluefinschatham.com/">Bluefins Sushi & Sake Bar</a></td>
+						<td>Chatham</td>
+						<td>Sushi, pan-Asian</td>
+						<td>Hip, fun, casual</td>
+						<td>$$</td>
+						<td><a href="tel:1-508-348-1573">1-508-348-1573</a></td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td><a target="_blank" href="wildgoosetavern.com">Wild Goose Tavern</a></td>
+						<td>Chatham</td>
+						<td>American</td>
+						<td>Upscale pub, casual</td>
+						<td>$$</td>
+						<td><a href="tel:1-508-945-5590">1-508-945-5590</a></td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td><a target="_blank" href="http://www.chathamcookware.com/">Chatham Cookware Café</a></td>
+						<td>Chatham</td>
+						<td>Sandwiches, salads, breakfast sandwiches, pastries, coffee</td>
+						<td>Breakfast and lunch spot, to-go with some seating in backyard garden, can call ahead</td>
+						<td>$</td>
+						<td><a href="tel:1-508-945-1250">1-508-945-1250</a></td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td><a target="_blank" href="http://www.rednun.com/Chatham/">Red Nun Bar & Grill</a></td>
+						<td>Chatham</td>
+						<td>Pub fare, burgers, sandwiches, seafood</td>
+						<td>Casual, pub vibe, trivia nights</td>
+						<td>$</td>
+						<td><a href="tel:1-508-348-0469">1-508-348-0469</a></td>
+					</tr>
+					<tr>
+						<td>G</td>
+						<td><a target="_blank" href="https://www.delmarbistro.com/">Del Mar Bar & Bistro</a></td>
+						<td>Chatham</td>
+						<td>Bistro fare, thin-crust pizza</td>
+						<td>Bistro, hip, occasional live jazz</td>
+						<td>$$</td>
+						<td><a href="tel:1-508-945-9988">1-508-945-9988</a></td>
+					</tr>
+					<tr>
+						<td>H</td>
+						<td><a target="_blank" href="http://www.piscesofchatham.com/">Pisces</a></td>
+						<td>South Chatham</td>
+						<td>Mediterranean-inspired seafood</td>
+						<td>Cozy, charming, small</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-432-4600">1-508-432-4600</a></td>
+					</tr>
+					<tr>
+						<td>I</td>
+						<td><a target="_blank" href="http://www.thetalkativepig.com/">The Talkative Pig</a></td>
+						<td>South Chatham</td>
+						<td>Mediterranean</td>
+						<td>Casual, relaxed, cozy; great for lunch or picnic food to-go</td>
+						<td>$</td>
+						<td><a href="tel:1-508-430-5211">1-508-430-5211</a></td>
+					</tr>
+					<tr>
+						<td>J</td>
+						<td><a target="_blank" href="http://www.wequassett.com/dining">Twenty Eight Atlantic</a></td>
+						<td>Harwich</td>
+						<td>New American </td>
+						<td>Formal, inside Wequassett Resort, beautiful views of the water</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-430-3000">1-508-430-3000</a></td>
+					</tr>
+					<tr>
+						<td>K</td>
+						<td><a target="_blank" href="http://www.wequassett.com/dining">Outer Bar & Grille</a></td>
+						<td>Harwich</td>
+						<td>American, pub, seafood</td>
+						<td>Casual, outdoor seating available, water view</td>
+						<td>$$</td>
+						<td><a href="tel:1-508-432-5400">1-508-432-5400</a></td>
+					</tr>
+					<tr>
+						<td>L</td>
+						<td><a target="_blank" href="bucasroadhouse.com">Buca's Tuscan Roadhouse</a></td>
+						<td>Harwich</td>
+						<td>Tuscan / Italian</td>
+						<td>Cozy, warm, romantic</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-432-6900">1-508-432-6900</a></td>
+					</tr>
+					<tr>
+						<td>M</td>
+						<td><a target="_blank" href="http://www.braxrestaurant.com/">Brax Landing</a></td>
+						<td>Harwich Port</td>
+						<td>Classic New England</td>
+						<td>Casual, rustic, with view of Saquetucket Harbor</td>
+						<td>$</td>
+						<td><a href="tel:1-508-432-5515">1-508-432-5515</a></td>
+					</tr>
+					<tr>
+						<td>N</td>
+						<td><a target="_blank" href="emberpizza.com">Ember</a></td>
+						<td>Harwich Port</td>
+						<td>Coal-fire pizza, wings & pasta</td>
+						<td>Casual, fun, always a crowd, fire-pit outside</td>
+						<td>$</td>
+						<td><a href="tel:1-508-430-0407">1-508-430-0407</a></td>
+					</tr>
+					<tr>
+						<td>O</td>
+						<td><a target="_blank" href="http://www.theportrestaurant.com/theport.htm">Mason Jar</a></td>
+						<td>Harwich Port</td>
+						<td>Sandwiches</td>
+						<td>Great for lunch, some picnic tables, mostly to-go</td>
+						<td>$</td>
+						<td><a href="tel:1-508-430-5410">1-508-430-5410</a></td>
+					</tr>
+					<tr>
+						<td>P</td>
+						<td><a target="_blank" href="http://www.theportrestaurant.com/theport.htm">The Port</a></td>
+						<td>Harwich Port</td>
+						<td>Classic New England, seafood, raw-bar, </td>
+						<td>Hot spot, hip, always a crowd</td>
+						<td>$$</td>
+						<td><a href="tel:1-508-430-5410">1-508-430-5410</a></td>
+					</tr>
+					<tr>
+						<td>Q</td>
+						<td><a target="_blank" href="http://www.capeseagrille.com/home/">Cape Sea Grille</a></td>
+						<td>Harwich</td>
+						<td>New American </td>
+						<td>Elegant, cozy, relaxed</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-432-4745">1-508-432-4745</a></td>
+					</tr>
+					<tr>
+						<td>R</td>
+						<td><a target="_blank" href="oceanhouserestaurant.com">Ocean House </a></td>
+						<td>Dennis</td>
+						<td>New American, Pan-Asian, Eclectic, Innovative</td>
+						<td>Elegant, overlooking Nantucket Sound; a bit of a drive but worth the view!</td>
+						<td>$$$</td>
+						<td><a href="tel:1-508-394-0700">1-508-394-0700</a></td>
+					</tr>
+				</table>
+			</section>
+
+			<!-- CTA -->
+			<section id="cta" class="main special">
+				<h2>We Hope You Can Make It</h2>
+				<p>We are looking forward to celebrating with you.<br />
+				Feel free to contact us with any questions, comments<br />
+				or concerns. See you soon!</p>
+				<ul class="actions">
+					<li><a href="#" class="button big contactBtn">Contact Info</a></li>
+				</ul>
+				<ul class="actions">
+					<li><a href="/" class="button big">Home Page</a></li>
+				</ul>
+				<!-- Contact Modal -->
+				<div class="contactModal">
+				  <div class="contactModal-content">
+				    <div class="contactModal-text">
+				    	<h3>Email: <a href="mailto:legally.brannie@gmail.com">legally.brannie@gmail.com</a></h3>
+				    	<h3>Phone: <a href="tel:1-609-273-2099">1-609-273-2099</a></h3>
+				    </div>
+				    <a href="#" class="button big contactModal-close">Close</a>
+				  </div>
+
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/search?f=tweets&q=%23LegallyBrannie&src=typd" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/search/top/?q=%23LegallyBrannie" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/explore/tags/LegallyBrannie/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<p class="copyright">&copy; <a href="https://templated.co">TEMPLATED</a></p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery.tablesorter.min.js' %}"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/util.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+		<script src="{% static 'js/custom.js' %}"></script>
+		<script type="text/javascript">
+			function initMap() {
+				var CBILatLng = {lat: 41.684960, lng: -69.952397}; 
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 12,
+				  center: CBILatLng
+				});
+
+				var goldStar = {
+				  path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+				  fillColor: 'yellow',
+				  fillOpacity: 0.8,
+				  scale: 0.1,
+				  strokeColor: 'gold',
+				  strokeWeight: 3
+				};
+
+				/* CBI */
+				var CBI = new google.maps.Marker({
+				  position: CBILatLng,
+				  map: map,
+				  title: 'Chatham Bars Inn',
+				  icon: goldStar,
+				});
+				var CBIText = "<h2>Chatham Bars Inn</h2>";
+				var CBIinfowindow = new google.maps.InfoWindow({
+			    	content: CBIText
+				});
+				CBI.addListener('click', function() {
+			    	CBIinfowindow.open(map, CBI);
+			  	});
+
+			  	/*ImpudentOyster*/ 
+				var ImpudentOysterLatLng = {lat: 41.680070, lng: -69.956423};
+				var ImpudentOyster = new google.maps.Marker({ 
+				 	 position: ImpudentOysterLatLng,
+					 map: map, 
+				 	 title:"Impudent Oyster", 
+				 	 label: "A",
+				});
+				var ImpudentOysterText = "<a target='_blank' href='http://www.theimpudentoyster.com/'>Impudent Oyster</a></br><a href='tel:1-508-945-3545'>1-508-945-3545</a></br>15 Chatham Bars Avenue, Chatham, MA";
+				var ImpudentOysterInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: ImpudentOysterText
+				});
+				ImpudentOyster.addListener("click", function(){ 
+				 	ImpudentOysterInfoWindow.open(map, ImpudentOyster);
+				});
+
+				/*ChathamSquire*/ 
+				var ChathamSquireLatLng = {lat: 41.679640, lng: -69.957115};
+				var ChathamSquire = new google.maps.Marker({ 
+				 	 position: ChathamSquireLatLng,
+					 map: map, 
+				 	 title:"Chatham Squire", 
+				 	 label: "B",
+				});
+				var ChathamSquireText = "<a target='_blank' href='http://thesquire.com'>Chatham Squire</a></br><a href='tel:1-508-945-0945'>1-508-945-0945</a></br>487 Main Street, Chatham, MA";
+				var ChathamSquireInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: ChathamSquireText
+				});
+				ChathamSquire.addListener("click", function(){ 
+				 	ChathamSquireInfoWindow.open(map, ChathamSquire);
+				});
+
+				/*BluefinsSushiSakeBar*/ 
+				var BluefinsSushiSakeBarLatLng = {lat: 41.680046, lng: -69.957644};
+				var BluefinsSushiSakeBar = new google.maps.Marker({ 
+				 	 position: BluefinsSushiSakeBarLatLng,
+					 map: map, 
+				 	 title:"Bluefins Sushi & Sake Bar", 
+				 	 label: "C",
+				});
+				var BluefinsSushiSakeBarText = "<a target='_blank' href='http://www.bluefinschatham.com/'>Bluefins Sushi & Sake Bar</a></br><a href='tel:1-508-348-1573'>1-508-348-1573</a></br>513 Main Street, Chatham, MA";
+				var BluefinsSushiSakeBarInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: BluefinsSushiSakeBarText
+				});
+				BluefinsSushiSakeBar.addListener("click", function(){ 
+				 	BluefinsSushiSakeBarInfoWindow.open(map, BluefinsSushiSakeBar);
+				});
+
+				/*WildGooseTavern*/ 
+				var WildGooseTavernLatLng = {lat: 41.680257, lng: -69.957627};
+				var WildGooseTavern = new google.maps.Marker({ 
+				 	 position: WildGooseTavernLatLng,
+					 map: map, 
+				 	 title:"Wild Goose Tavern", 
+				 	 label: "D",
+				});
+				var WildGooseTavernText = "<a target='_blank' href='http://wildgoosetavern.com'>Wild Goose Tavern</a></br><a href='tel:1-508-945-5590'>1-508-945-5590</a></br>516 Main Street, Chatham, MA";
+				var WildGooseTavernInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: WildGooseTavernText
+				});
+				WildGooseTavern.addListener("click", function(){ 
+				 	WildGooseTavernInfoWindow.open(map, WildGooseTavern);
+				});
+
+				/*ChathamCookwareCafe*/ 
+				var ChathamCookwareCafeLatLng = {lat: 41.680588, lng: -69.957791};
+				var ChathamCookwareCafe = new google.maps.Marker({ 
+				 	 position: ChathamCookwareCafeLatLng,
+					 map: map, 
+				 	 title:"Chatham Cookware Cafe", 
+				 	 label: "E",
+				});
+				var ChathamCookwareCafeText = "<a target='_blank' href='http://www.chathamcookware.com/'>Chatham Cookware Cafe</a></br><a href='tel:1-508-945-1250'>1-508-945-1250</a></br>524 Main Street, Chatham, MA";
+				var ChathamCookwareCafeInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: ChathamCookwareCafeText
+				});
+				ChathamCookwareCafe.addListener("click", function(){ 
+				 	ChathamCookwareCafeInfoWindow.open(map, ChathamCookwareCafe);
+				});
+
+				/*RedNunBarGrill*/ 
+				var RedNunBarGrillLatLng = {lat: 41.684143, lng: -69.963942};
+				var RedNunBarGrill = new google.maps.Marker({ 
+				 	 position: RedNunBarGrillLatLng,
+					 map: map, 
+				 	 title:"Red Nun Bar & Grill", 
+				 	 label: "F",
+				});
+				var RedNunBarGrillText = "<a target='_blank' href='http://www.rednun.com/Chatham/'>Red Nun Bar & Grill</a></br><a href='tel:1-508-348-0469'>1-508-348-0469</a></br>746 Main Street, Chatham, MA";
+				var RedNunBarGrillInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: RedNunBarGrillText
+				});
+				RedNunBarGrill.addListener("click", function(){ 
+				 	RedNunBarGrillInfoWindow.open(map, RedNunBarGrill);
+				});
+
+				/*DelMarBarBistro*/ 
+				var DelMarBarBistroLatLng = {lat: 41.686000, lng: -69.969447};
+				var DelMarBarBistro = new google.maps.Marker({ 
+				 	 position: DelMarBarBistroLatLng,
+					 map: map, 
+				 	 title:"Del Mar Bar & Bistro", 
+				 	 label: "G",
+				});
+				var DelMarBarBistroText = "<a target='_blank' href='https://www.delmarbistro.com/'>Del Mar Bar & Bistro</a></br><a href='tel:1-508-945-9988'>1-508-945-9988</a></br>907 Main Street, Chatham, MA";
+				var DelMarBarBistroInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: DelMarBarBistroText
+				});
+				DelMarBarBistro.addListener("click", function(){ 
+				 	DelMarBarBistroInfoWindow.open(map, DelMarBarBistro);
+				});
+
+				/*Pisces*/ 
+				var PiscesLatLng = {lat: 41.678561, lng: -70.027301};
+				var Pisces = new google.maps.Marker({ 
+				 	 position: PiscesLatLng,
+					 map: map, 
+				 	 title:"Pisces", 
+				 	 label: "H",
+				});
+				var PiscesText = "<a target='_blank' href='http://www.piscesofchatham.com/'>Pisces</a></br><a href='tel:1-508-432-4600'>1-508-432-4600</a></br>2653 Main Street, South Chatham, MA";
+				var PiscesInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: PiscesText
+				});
+				Pisces.addListener("click", function(){ 
+				 	PiscesInfoWindow.open(map, Pisces);
+				});
+
+				/*TheTalkativePig*/ 
+				var TheTalkativePigLatLng = {lat: 41.678947, lng: -70.026927};
+				var TheTalkativePig = new google.maps.Marker({ 
+				 	 position: TheTalkativePigLatLng,
+					 map: map, 
+				 	 title:"The Talkative Pig", 
+				 	 label: "I",
+				});
+				var TheTalkativePigText = "<a target='_blank' href='http://www.thetalkativepig.com/'>The Talkative Pig</a></br><a href='tel:1-508-430-5211'>1-508-430-5211</a></br>2642 Main Street, South Chatham, MA";
+				var TheTalkativePigInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: TheTalkativePigText
+				});
+				TheTalkativePig.addListener("click", function(){ 
+				 	TheTalkativePigInfoWindow.open(map, TheTalkativePig);
+				});
+
+				/*TwentyEightAtlantic*/ 
+				var TwentyEightAtlanticLatLng = {lat: 41.722500, lng: -69.998621};
+				var TwentyEightAtlantic = new google.maps.Marker({ 
+				 	 position: TwentyEightAtlanticLatLng,
+					 map: map, 
+				 	 title:"Twenty Eight Atlantic", 
+				 	 label: "J",
+				});
+				var TwentyEightAtlanticText = "<a target='_blank' href='http://www.wequassett.com/dining'>Twenty Eight Atlantic</a></br><a href='tel:1-508-430-3000'>1-508-430-3000</a></br>2173 Route 28, Harwich, MA";
+				var TwentyEightAtlanticInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: TwentyEightAtlanticText
+				});
+				TwentyEightAtlantic.addListener("click", function(){ 
+				 	TwentyEightAtlanticInfoWindow.open(map, TwentyEightAtlantic);
+				});
+
+				/*OuterBarGrille*/ 
+				var OuterBarGrilleLatLng = {lat: 41.722600, lng: -69.998631};
+				var OuterBarGrille = new google.maps.Marker({ 
+				 	 position: OuterBarGrilleLatLng,
+					 map: map, 
+				 	 title:"Outer Bar & Grille", 
+				 	 label: "K",
+				});
+				var OuterBarGrilleText = "<a target='_blank' href='http://www.wequassett.com/dining'>Outer Bar & Grille</a></br><a href='tel:1-508-432-5400'>1-508-432-5400</a></br>2173 Route 28, Harwich, MA";
+				var OuterBarGrilleInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: OuterBarGrilleText
+				});
+				OuterBarGrille.addListener("click", function(){ 
+				 	OuterBarGrilleInfoWindow.open(map, OuterBarGrille);
+				});
+
+				/*BucasTuscanRoadhouse*/ 
+				var BucasTuscanRoadhouseLatLng = {lat: 41.679014, lng: -70.039012};
+				var BucasTuscanRoadhouse = new google.maps.Marker({ 
+				 	 position: BucasTuscanRoadhouseLatLng,
+					 map: map, 
+				 	 title:"Buca's Tuscan Roadhouse", 
+				 	 label: "L",
+				});
+				var BucasTuscanRoadhouseText = "<a target='_blank' href='http://bucasroadhouse.com'>Buca's Tuscan Roadhouse</a></br><a href='tel:1-508-432-6900'>1-508-432-6900</a></br>4 Depot Road, Harwich, MA";
+				var BucasTuscanRoadhouseInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: BucasTuscanRoadhouseText
+				});
+				BucasTuscanRoadhouse.addListener("click", function(){ 
+				 	BucasTuscanRoadhouseInfoWindow.open(map, BucasTuscanRoadhouse);
+				});
+
+				/*BraxLanding*/ 
+				var BraxLandingLatLng = {lat: 41.670127, lng: -70.060587};
+				var BraxLanding = new google.maps.Marker({ 
+				 	 position: BraxLandingLatLng,
+					 map: map, 
+				 	 title:"Brax Landing", 
+				 	 label: "M",
+				});
+				var BraxLandingText = "<a target='_blank' href='http://www.braxrestaurant.com/'>Brax Landing</a></br><a href='tel:1-508-432-5515'>1-508-432-5515</a></br>705 Route 28, Harwich Port, MA";
+				var BraxLandingInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: BraxLandingText
+				});
+				BraxLanding.addListener("click", function(){ 
+				 	BraxLandingInfoWindow.open(map, BraxLanding);
+				});
+
+				/*Ember*/ 
+				var EmberLatLng = {lat: 41.668049, lng: -70.070452};
+				var Ember = new google.maps.Marker({ 
+				 	 position: EmberLatLng,
+					 map: map, 
+				 	 title:"Ember", 
+				 	 label: "N",
+				});
+				var EmberText = "<a target='_blank' href='http://www.emberpizza.com'>Ember</a></br><a href='tel:1-508-430-0407'>1-508-430-0407</a></br>600 Route 28, Harwich Port, MA";
+				var EmberInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: EmberText
+				});
+				Ember.addListener("click", function(){ 
+				 	EmberInfoWindow.open(map, Ember);
+				});
+
+				/*MasonJar*/ 
+				var MasonJarLatLng = {lat: 41.667846, lng: -70.075436};
+				var MasonJar = new google.maps.Marker({ 
+				 	 position: MasonJarLatLng,
+					 map: map, 
+				 	 title:"Mason Jar", 
+				 	 label: "O",
+				});
+				var MasonJarText = "<a target='_blank' href='http://www.theportrestaurant.com/theport.htm'>Mason Jar</a></br><a href='tel:1-508-430-5410'>1-508-430-5410</a></br>541 Route 28, Harwich Port, MA";
+				var MasonJarInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: MasonJarText
+				});
+				MasonJar.addListener("click", function(){ 
+				 	MasonJarInfoWindow.open(map, MasonJar);
+				});
+
+				/*ThePort*/ 
+				var ThePortLatLng = {lat: 41.667646, lng: -70.075436};
+				var ThePort = new google.maps.Marker({ 
+				 	 position: ThePortLatLng,
+					 map: map, 
+				 	 title:"The Port", 
+				 	 label: "P",
+				});
+				var ThePortText = "<a target='_blank' href='http://www.theportrestaurant.com/theport.htm'>The Port</a></br><a href='tel:1-508-430-5410'>1-508-430-5410</a></br>541 Route 28, Harwich Port, MA";
+				var ThePortInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: ThePortText
+				});
+				ThePort.addListener("click", function(){ 
+				 	ThePortInfoWindow.open(map, ThePort);
+				});
+
+				/*CapeSeaGrille*/ 
+				var CapeSeaGrilleLatLng = {lat: 41.666506, lng: -70.074871};
+				var CapeSeaGrille = new google.maps.Marker({ 
+				 	 position: CapeSeaGrilleLatLng,
+					 map: map, 
+				 	 title:"Cape Sea Grille", 
+				 	 label: "Q",
+				});
+				var CapeSeaGrilleText = "<a target='_blank' href='http://www.capeseagrille.com/home/'>Cape Sea Grille</a></br><a href='tel:1-508-432-4745'>1-508-432-4745</a></br>31 Sea St., Harwich Port, MA";
+				var CapeSeaGrilleInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: CapeSeaGrilleText
+				});
+				CapeSeaGrille.addListener("click", function(){ 
+				 	CapeSeaGrilleInfoWindow.open(map, CapeSeaGrille);
+				});
+
+				/*OceanHouse*/ 
+				var OceanHouseLatLng = {lat: 41.654995, lng: -70.125311};
+				var OceanHouse = new google.maps.Marker({ 
+				 	 position: OceanHouseLatLng,
+					 map: map, 
+				 	 title:"Ocean House", 
+				 	 label: "R",
+				});
+				var OceanHouseText = "<a target='_blank' href='http://oceanhouserestaurant.com'>Ocean House</a></br><a href='tel:1-508-394-0700'>1-508-394-0700</a></br>425 Old Wharf Road, Dennis Port, MA";
+				var OceanHouseInfoWindow = new google.maps.InfoWindow({ 
+				 	 content: OceanHouseText
+				});
+				OceanHouse.addListener("click", function(){ 
+				 	OceanHouseInfoWindow.open(map, OceanHouse);
+				});
+
+			  	google.maps.event.addDomListener(window, 'resize', function() {
+				    setTimeout(function(){map.panTo(CBILatLng);},1000);
+				})
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3a3-iScvaizaXbajC82osjU7VbziooAg&callback=initMap"></script>
+	</body>
+</html>
