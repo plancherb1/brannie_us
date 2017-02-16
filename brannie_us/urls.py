@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^wedding/restaurants', weddingViews.restaurants, name='weddingRestaurants'),
     url(r'^wedding/activities', weddingViews.activities, name='weddingActivities'),
     url(r'^wedding/travel', weddingViews.travel, name='weddingTravel'),
+    url(r'^wedding/itinerary', weddingViews.itinerary, name='weddingItinerary'),
     #url(r'getImage/(?P<id>[0-9]+)/$', weddingViews.getImage, name='getImage'),
 ]
 

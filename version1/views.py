@@ -23,13 +23,18 @@ def hotels(request):
 # Saturday activities page
 def saturday(request):
 	return render(request, 'epilogue/saturday.html')
+# restaurant suggestions page
 def restaurants(request):
 	return render(request, 'epilogue/restaurants.html')
+# cape cod activities page
 def activities(request):
 	return render(request, 'epilogue/activities.html')
 # directions page
 def travel(request):
 	return render(request, 'epilogue/travel.html')
+# main itinerary page
+def itinerary(request):
+	return render(request, 'epilogue/itinerary.html')
 # return image url
 def getImage(request, id):
 	url = static("images/slideshow/" + str(id) + ".jpg")
