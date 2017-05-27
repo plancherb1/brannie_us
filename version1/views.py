@@ -39,3 +39,6 @@ def itinerary(request):
 def getImage(request, id):
 	url = static("images/slideshow/" + str(id) + ".jpg")
 	return HttpResponse(url)
+# guest locations page
+def guestLoc(request):
+	return render(request, 'epilogue/guestLoc.html')
