@@ -3,7 +3,7 @@ amqp==1.4.9
 anyjson==0.3.3
 apt-xapian-index==0.45
 billiard==3.3.0.23
-celery==3.1.23
+celery==5.2.2
 chardet==2.0.1
 colorama==0.2.5
 command-not-found==0.3
