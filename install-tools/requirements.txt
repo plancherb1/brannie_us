@@ -20,7 +20,7 @@ httplib2==0.8
 kombu==3.0.35
 lockfile==0.8
 lxml==3.3.3
-mod-wsgi==4.5.3
+mod-wsgi==4.9.3
 MySQL-python==1.2.5
 oauthlib==0.6.1
 oneconf==0.3.7.14.4.1
